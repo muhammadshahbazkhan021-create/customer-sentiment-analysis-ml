@@ -1,0 +1,117 @@
+{
+  "sentiment": {
+    "best_model": "Multinomial Naive Bayes",
+    "metrics": {
+      "Model": "Multinomial Naive Bayes",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1 Score": 1.0
+    }
+  },
+  "complaint_registered": {
+    "best_model": "Logistic Regression",
+    "metrics": {
+      "Model": "Logistic Regression",
+      "Accuracy": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1 Score": 1.0,
+      "ROC-AUC": 1.0
+    }
+  },
+  "issue_resolved": {
+    "best_model": "Logistic Regression",
+    "metrics": {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9998,
+      "Precision": 0.9998000602409638,
+      "Recall": 0.9998,
+      "F1 Score": 0.9997999853094598,
+      "ROC-AUC": 1.0
+    }
+  },
+  "feature_config": {
+    "complaint": {
+      "numeric": [
+        "customer_rating",
+        "response_time_hours"
+      ],
+      "categorical": [
+        "gender",
+        "age_group",
+        "region",
+        "product_category",
+        "platform"
+      ]
+    },
+    "resolved": {
+      "numeric": [
+        "customer_rating",
+        "response_time_hours"
+      ],
+      "categorical": [
+        "gender",
+        "age_group",
+        "region",
+        "product_category",
+        "platform",
+        "complaint_registered"
+      ]
+    }
+  },
+  "categorical_values": {
+    "gender": [
+      "female",
+      "male",
+      "other"
+    ],
+    "age_group": [
+      "18-25",
+      "26-35",
+      "36-45",
+      "46-60",
+      "60+"
+    ],
+    "region": [
+      "central",
+      "east",
+      "north",
+      "south",
+      "west"
+    ],
+    "product_category": [
+      "automobile",
+      "beauty",
+      "books",
+      "electronics",
+      "fashion",
+      "groceries",
+      "home & kitchen",
+      "sports",
+      "travel"
+    ],
+    "platform": [
+      "ajio",
+      "amazon",
+      "bigbasket",
+      "boat",
+      "croma",
+      "facebook marketplace",
+      "flipkart",
+      "jiomart",
+      "lenskart",
+      "meesho",
+      "myntra",
+      "nykaa",
+      "others",
+      "paytm mall",
+      "reliance digital",
+      "shopclues",
+      "snapdeal",
+      "swiggy instamart",
+      "tata cliq",
+      "zepto"
+    ]
+  }
+}
